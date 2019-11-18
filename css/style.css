@@ -18,18 +18,19 @@ h1 {
 
 .h2 {
 	font-weight: 300;
-	font-size: 36px;
+	font-size: 28px;
 }
 
 .h3 {
 	font-weight:600;
-	font-size: 38px;
+	font-size: 30px;
+	padding-bottom: 10px;
 }
 h4 {
 	font-size: 24px;
 }
 
-.sub-head {font-weight:600;
+.sub-head {font-weight: 600;
 					font size: 30px;}
 
 blockquote {
@@ -48,7 +49,6 @@ a {
 	 }
 a:hover { color: #fffdcf;}
 
-a:active {color: #fffdcf;}
 
 .grid {
 	display: grid;
@@ -59,10 +59,12 @@ a:active {color: #fffdcf;}
 }
 
 .home-grid {display: grid;
-						grid-template-columns: 1fr 1fr;
+						grid-template-columns: 70% 30%;
 						grid-gap: 40px;
-						width: 60%;
-						margin: auto;}
+						width: 95%;
+						margin: right;}
+
+.home-image {}
 
 .menu-grid {display: grid;
 						grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -73,7 +75,7 @@ a:active {color: #fffdcf;}
 .logo {width: 60%;
 			margin: auto;
 		  padding-top: 10px;
-			padding-bottom: 10px;
+			padding-bottom: 0px;
 		}
 
 header {background-color; white;}
@@ -104,6 +106,8 @@ li {display: inline;
 				color: white;
 				text-align: center;
 			}
+
+.current-link {color: #fffdcf;}
 
 
 
