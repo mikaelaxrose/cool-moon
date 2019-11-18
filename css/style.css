@@ -1,33 +1,40 @@
 /* Enter your Styles below! */
 
 
-body { 
-	font-family: Helvetica, sans-serif;
+body {
+	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
+	color: #8fc9cc;
 	 }
 
 h1, h2, h3, h4 {
-	font-family: Helvetica, sans-serif;
+	font-family: 'Nunito', sans-serif;
+	color: #8fc9cc;
 }
 
 h1 {
 	font-size: 48px;
 }
 
-h2 {
+.h2 {
+	font-weight: 300;
 	font-size: 36px;
 }
 
-h3 {
-	font-size: 28px;
+.h3 {
+	font-weight:600;
+	font-size: 38px;
 }
 h4 {
 	font-size: 24px;
 }
 
+.sub-head {font-weight:600;
+					font size: 30px;}
+
 blockquote {
 	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 header {margin-bottom: 20px;}
@@ -35,11 +42,13 @@ header {margin-bottom: 20px;}
 /* ensures that your images stretch the width of their containers */
 img { width: 100%; }
 
-a { 
-	color: red;
+a {
+	color: white;
 	text-decoration: none;
 	 }
-a:hover { color: black; }
+a:hover { color: #fffdcf;}
+
+a:active {color: #fffdcf;}
 
 .grid {
 	display: grid;
@@ -49,9 +58,78 @@ a:hover { color: black; }
 	margin: auto;
 }
 
-.grid div {
-	background-color: #ccc;
-	padding: 20px;
+.home-grid {display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-gap: 40px;
+						width: 60%;
+						margin: auto;}
+
+.menu-grid {display: grid;
+						grid-template-columns: 1fr 1fr 1fr 1fr;
+						grid-gap: 60px;
+						width: 40%;
+						margin: left;}
+
+.logo {width: 60%;
+			margin: auto;
+		  padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+header {background-color; white;}
+
+main {padding: 40px;
+			background-color: #fffdcf;}
+
+footer {background-color: #8fc9cc;
+				font-family: 'Nunito', sans-serif;
+				padding: 50px;
+				margin: auto;
+				width: 100%;
+				color: white;}
+
+ul {display: inline-inline-block
+		position: relative;
+		text-align: center;
+			width: 100%;
+			background-color: #8fc9cc;
+			padding: 15px;
+		}
+
+li {display: inline;
+				font-family: 'Nunito', sans-serif;
+				margin: auto;
+				width: 100%;
+				padding: 15px;
+				color: white;
+				text-align: center;
+			}
+
+
+
+input[type=text], select, textarea {
+  width: 25%;
+  padding: 12px; /* Some padding */
+  border: 3px solid #8fc9cc;
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #8fc9cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]: hover {
+  background-color: white;
+	color: #8fc9cc;
 }
 /*
 font-family: 'Mansalva', cursive;
