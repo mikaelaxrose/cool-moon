@@ -32,7 +32,8 @@ h4 {
 
 .sub-head {font-weight: 900;
 					font size: 50px;
-					margin-bottom: 5px;}
+					margin-top: 30px;
+					}
 
 blockquote {
 	margin: 20px 60px;
@@ -66,11 +67,13 @@ a:hover { color: #fffdcf;}
 							width: 100%;
 							height: auto;}
 
-.menu-grid {display-inline: block;
+.menu-grid {display: grid;
 						grid-template-columns: 1fr 1fr;
-						grid-gap: 60px;
+						grid-gap: 30px;
 						width: 90%;
 						}
+
+.flavor {}
 
 .flavor-list {margin-bottom: 15px;
 							width: 40%;
