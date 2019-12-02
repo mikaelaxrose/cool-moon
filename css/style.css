@@ -33,6 +33,7 @@ h4 {
 .sub-head {font-weight: 900;
 					font size: 50px;
 					margin-top: 30px;
+					margin-bottom: 5px;
 					}
 
 blockquote {
@@ -71,9 +72,14 @@ a:hover { color: #fffdcf;}
 						grid-template-columns: 1fr 1fr;
 						grid-gap: 30px;
 						width: 90%;
+						position: relative;
 						}
 
-.flavor {}
+.flavor { width:auto;
+					position: absolute;
+					top:-40px;
+					right: -130px;
+				height: 116%;}
 
 .flavor-list {margin-bottom: 15px;
 							width: 40%;
@@ -92,7 +98,12 @@ header {background-color; white;
 
 main {padding: 40px;
 			background-color: #fffdcf;
-			}
+		}
+.menu-page main {
+	background-image: url(../images/flavors.jpg);
+	background-size: cover;
+	height: 100vh;
+}
 
 footer {background-color: #8fc9cc;
 				font-family: 'Nunito', sans-serif;
@@ -128,7 +139,7 @@ li {display: inline;
 .closed {margin-top: 10px;}
 
 input[type=text], select, textarea {
-  width: 25%;
+  width: 100%;
   padding: 12px; /* Some padding */
   border: 3px solid #8fc9cc;
   border-radius: 4px; /* Rounded borders */
@@ -156,3 +167,8 @@ font-family: 'Mansalva', cursive;
 font-family: 'Dosis', sans-serif;
 font-family: 'Indie Flower', cursive;
 */
+
+@media only screen and ( min-width: 1024px) {
+	.flavor {display: none;}
+	.flavor2 {display: block;}
+}
